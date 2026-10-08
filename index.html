@@ -14,31 +14,63 @@
     <p class="eyebrow">Happy birthday</p>
     <h1>Dad</h1>
 
-    <button class="gift" id="open-gift" type="button" aria-label="Open your present">
-      <span class="box">
-        <span class="cavity" aria-hidden="true">
-          <span class="photo-crop">
-            <img class="gift-photo" src="images/cover-outside.jpg" alt="">
+    <div class="stage" id="stage">
+      <button class="gift gift--outer" id="gift-1" type="button" aria-label="Open your present">
+        <span class="box">
+          <span class="cavity" aria-hidden="true">
+            <span class="inner-rise">
+              <span class="mini-gift">
+                <span class="mini-lid"></span>
+                <span class="mini-body"></span>
+                <span class="mini-bow"></span>
+              </span>
+            </span>
+          </span>
+          <span class="box-body">
+            <span class="ribbon-v"></span>
+            <span class="band band-left"></span>
+            <span class="band band-right"></span>
+          </span>
+          <span class="lid">
+            <span class="lid-face"></span>
+            <span class="ribbon-v ribbon-lid"></span>
+            <span class="bow" aria-hidden="true">
+              <span class="loop loop-left"></span>
+              <span class="loop loop-right"></span>
+              <span class="knot"></span>
+              <span class="tail tail-left"></span>
+              <span class="tail tail-right"></span>
+            </span>
           </span>
         </span>
-        <span class="box-body">
-          <span class="ribbon-v"></span>
-          <span class="band band-left"></span>
-          <span class="band band-right"></span>
-        </span>
-        <span class="lid">
-          <span class="lid-face"></span>
-          <span class="ribbon-v ribbon-lid"></span>
-          <span class="bow" aria-hidden="true">
-            <span class="loop loop-left"></span>
-            <span class="loop loop-right"></span>
-            <span class="knot"></span>
-            <span class="tail tail-left"></span>
-            <span class="tail tail-right"></span>
+      </button>
+
+      <button class="gift gift--inner" id="gift-2" type="button" aria-label="Open this one too" hidden>
+        <span class="box">
+          <span class="cavity" aria-hidden="true">
+            <span class="photo-crop">
+              <img class="gift-photo" src="images/cover-outside.jpg" alt="">
+            </span>
+          </span>
+          <span class="box-body">
+            <span class="ribbon-v"></span>
+            <span class="band band-left"></span>
+            <span class="band band-right"></span>
+          </span>
+          <span class="lid">
+            <span class="lid-face"></span>
+            <span class="ribbon-v ribbon-lid"></span>
+            <span class="bow" aria-hidden="true">
+              <span class="loop loop-left"></span>
+              <span class="loop loop-right"></span>
+              <span class="knot"></span>
+              <span class="tail tail-left"></span>
+              <span class="tail tail-right"></span>
+            </span>
           </span>
         </span>
-      </span>
-    </button>
+      </button>
+    </div>
 
     <p class="hint" id="hint">Tap to open</p>
   </section>
