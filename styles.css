@@ -272,33 +272,6 @@ h1 {
   transform: rotate(-28deg);
 }
 
-.tag {
-  position: absolute;
-  z-index: 5;
-  right: -4px;
-  bottom: 58px;
-  padding: 0.45rem 0.7rem 0.5rem;
-  background: #f7f1e4;
-  color: var(--ink);
-  font-family: "Fraunces", Georgia, serif;
-  font-size: 0.95rem;
-  border-radius: 2px 6px 6px 2px;
-  box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.18);
-  transform: rotate(8deg);
-  transition: opacity 0.3s ease;
-}
-
-.tag::before {
-  content: "";
-  position: absolute;
-  left: -18px;
-  top: 10px;
-  width: 22px;
-  height: 1px;
-  background: var(--gold);
-  transform: rotate(-20deg);
-}
-
 .gift.is-open .loop-left {
   transform: translate(-78px, -36px) rotate(-50deg);
   opacity: 0;
@@ -350,10 +323,6 @@ h1 {
 
 .gift.is-open .photo-crop {
   transform: translateY(-210px);
-}
-
-.gift.is-open .tag {
-  opacity: 0;
 }
 
 .hint {
@@ -409,7 +378,7 @@ h1 {
   margin: 0;
   background: #fff;
   border-radius: 18px;
-  padding: 0.75rem 0.75rem 0.9rem;
+  padding: 0.75rem;
   box-shadow: 0 18px 40px rgba(60, 36, 16, 0.1);
 }
 
@@ -420,12 +389,6 @@ h1 {
   object-fit: contain;
   border-radius: 10px;
   background: #fafafa;
-}
-
-.hero figcaption {
-  margin: 0.75rem 0.35rem 0.15rem;
-  color: var(--muted);
-  font-size: 0.92rem;
 }
 
 .thumbs {
@@ -471,17 +434,14 @@ h1 {
 }
 
 .copy p {
-  margin: 0 0 0.85rem;
+  margin: 0;
   line-height: 1.55;
   font-size: 1.05rem;
+  color: var(--muted);
 }
 
 .copy a {
   color: #7a2c38;
-}
-
-.note {
-  color: var(--muted);
 }
 
 .present.is-visible .present-inner {
@@ -504,7 +464,6 @@ h1 {
   .gift.is-open .band-right,
   .gift.is-open .ribbon-v,
   .gift.is-open .gift-photo,
-  .gift.is-open .tag,
   .gift-scene.is-leaving,
   .present.is-visible .present-inner {
     animation: none;

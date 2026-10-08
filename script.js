@@ -3,7 +3,6 @@ const present = document.getElementById("present");
 const openButton = document.getElementById("open-gift");
 const hint = document.getElementById("hint");
 const heroImg = document.getElementById("hero-img");
-const heroCaption = document.getElementById("hero-caption");
 const thumbs = document.querySelectorAll(".thumb");
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -32,7 +31,6 @@ thumbs.forEach((thumb) => {
   thumb.addEventListener("click", () => {
     heroImg.src = thumb.dataset.src;
     heroImg.alt = thumb.dataset.alt;
-    heroCaption.textContent = thumb.dataset.caption;
     thumbs.forEach((item) => item.classList.remove("is-selected"));
     thumb.classList.add("is-selected");
   });
