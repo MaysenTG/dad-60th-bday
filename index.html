@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy birthday</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,640&family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="gift-scene" id="gift-scene">
+    <p class="eyebrow">Happy birthday</p>
+    <h1>Dad</h1>
+
+    <button class="gift" id="open-gift" type="button" aria-label="Open your present">
+      <span class="box">
+        <span class="cavity" aria-hidden="true">
+          <span class="photo-crop">
+            <img class="gift-photo" src="images/cover-outside.jpg" alt="">
+          </span>
+        </span>
+        <span class="box-body">
+          <span class="ribbon-v"></span>
+          <span class="band band-left"></span>
+          <span class="band band-right"></span>
+        </span>
+        <span class="lid">
+          <span class="lid-face"></span>
+          <span class="ribbon-v ribbon-lid"></span>
+          <span class="bow" aria-hidden="true">
+            <span class="loop loop-left"></span>
+            <span class="loop loop-right"></span>
+            <span class="knot"></span>
+            <span class="tail tail-left"></span>
+            <span class="tail tail-right"></span>
+          </span>
+        </span>
+        <span class="tag" aria-hidden="true">Open me</span>
+      </span>
+    </button>
+
+    <p class="hint" id="hint">Tap the present</p>
+  </section>
+
+  <section class="present" id="present" hidden>
+    <div class="present-inner">
+      <p class="eyebrow">For your birthday</p>
+      <h2 tabindex="-1">It won't be here today.</h2>
+      <p class="lead">But this is what I got you.</p>
+
+      <figure class="hero">
+        <img id="hero-img" src="images/cover-outside.jpg" alt="Black leather pilot logbook cover with a tan patch, laser-engraved wings, and a sample name">
+        <figcaption id="hero-caption">The cover. The name on this patch is a sample.</figcaption>
+      </figure>
+
+      <div class="thumbs" role="list">
+        <button class="thumb is-selected" type="button" aria-label="The cover" data-src="images/cover-outside.jpg" data-alt="Black leather pilot logbook cover with a tan patch, laser-engraved wings, and a sample name" data-caption="The cover. The name on this patch is a sample.">
+          <img src="images/cover-outside.jpg" alt="">
+        </button>
+        <button class="thumb" type="button" aria-label="Wings and name patch" data-src="images/covers-group.jpg" data-alt="Two black leather logbook covers on a map, each with an engraved wings patch" data-caption="Wings and a name, engraved on a whisky leather patch.">
+          <img src="images/covers-group.jpg" alt="">
+        </button>
+        <button class="thumb" type="button" aria-label="Engraving close-up" data-src="images/cover-detail.jpg" data-alt="Close-up of the black leather cover and a tan wings patch" data-caption="Handmade, then laser-engraved.">
+          <img src="images/cover-detail.jpg" alt="">
+        </button>
+        <button class="thumb" type="button" aria-label="Inside the cover" data-src="images/cover-inside.jpg" data-alt="The black leather cover opened over a pilot logbook, with a Sparrowhawk patch inside" data-caption="It opens over the logbook.">
+          <img src="images/cover-inside.jpg" alt="">
+        </button>
+        <button class="thumb" type="button" aria-label="The logbook it fits" data-src="images/cover-engraving.jpg" data-alt="Blue NZCAA 1373 pilot's logbook that the leather cover is made to fit" data-caption="Made to fit an NZCAA pilot's logbook.">
+          <img src="images/cover-engraving.jpg" alt="">
+        </button>
+      </div>
+
+      <div class="copy">
+        <h3>A pilot logbook cover</h3>
+        <p>
+          Black aniline leather, handmade in New Zealand by
+          <a href="https://www.sparrowhawkleather.co.nz/collections/logbook-covers/products/nzcaa-pilot-logbook-cover-book-closure-black-aniline-laser-engraved-wings-name-patch">Sparrowhawk Leather</a>.
+          Wings and your name get laser-engraved on the patch. It’s made to fit an NZCAA logbook.
+        </p>
+        <p class="note">It’s made to order, so it takes about three weeks to arrive. The names in the photos are samples from the maker. Yours will have your name.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
